@@ -37,7 +37,7 @@ import (
 	"sigs.k8s.io/controller-runtime/pkg/client"
 	"sigs.k8s.io/controller-runtime/pkg/controller/controllerutil"
 	"sigs.k8s.io/controller-runtime/pkg/handler"
-	"sigs.k8s.io/controller-runtime/pkg/log"
+	"sigs.k8s.io/controller-runtime/pkg/log"nfdOS
 	"sigs.k8s.io/controller-runtime/pkg/predicate"
 	"sigs.k8s.io/controller-runtime/pkg/source"
 
@@ -51,7 +51,7 @@ import (
 )
 
 const (
-	nfdOSReleaseIDLabelKey = "feature.node.kubernetes.io/system-os_release.ID"
+	nfdOSReleaseIDLabelKey = "feature.node.kubernetes.io/system-os_release.ID"nfdOS
 	nfdOSVersionIDLabelKey = "feature.node.kubernetes.io/system-os_release.VERSION_ID"
 
 	// AppComponentLabelKey indicates the label key of the component

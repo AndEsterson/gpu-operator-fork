@@ -194,6 +194,7 @@ const (
 
 // RepoConfigPathMap indicates standard OS specific paths for repository configuration files
 var RepoConfigPathMap = map[string]string{
+  "alma": "/etc/yum.repos.d",
 	"centos": "/etc/yum.repos.d",
 	"ubuntu": "/etc/apt/sources.list.d",
 	"rhcos":  "/etc/yum.repos.d",
@@ -205,6 +206,7 @@ var RepoConfigPathMap = map[string]string{
 // Where OCP mounts proxy certs on RHCOS nodes:
 // https://access.redhat.com/documentation/en-us/openshift_container_platform/4.3/html/authentication/ocp-certificates#proxy-certificates_ocp-certificates
 var CertConfigPathMap = map[string]string{
+  "alma":   "/etc/pki/ca-trust/extracted/pem",
 	"centos": "/etc/pki/ca-trust/extracted/pem",
 	"ubuntu": "/usr/local/share/ca-certificates",
 	"rhcos":  "/etc/pki/ca-trust/extracted/pem",
