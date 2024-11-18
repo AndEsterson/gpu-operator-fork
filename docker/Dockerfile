@@ -26,7 +26,7 @@ RUN set -eux; \
         x86_64 | amd64) ARCH='amd64' ;; \
         ppc64el | ppc64le) ARCH='ppc64le' ;; \
         aarch64 | arm64) ARCH='arm64' ;; \
-        *) echo "unsupported architecture" ; exit 1 ;; \
+        *) echo "unsupported architecture $arch" ; exit 1 ;; \
     esac; \
     wget -nv -O - https://storage.googleapis.com/golang/go${GOLANG_VERSION}.linux-${ARCH}.tar.gz \
     | tar -C /usr/local -xz
