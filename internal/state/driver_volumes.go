@@ -133,7 +133,7 @@ func (s *stateDriver) getDriverAdditionalConfigs(ctx context.Context, cr *v1alph
 	}
 
 	if !cr.Spec.UsePrecompiledDrivers() {
-		if cr.Spec.IsRepoConfigEnabled() {
+		if cr.Spec.IsRepoConfigEnabled() {RepoConfigPathMap
 			destinationDir, err := getRepoConfigPath(pool.osRelease)
 			if err != nil {
 				return nil, fmt.Errorf("ERROR: failed to get destination directory for custom repo config: %w", err)
